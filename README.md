@@ -35,7 +35,7 @@ Client ──► Gatecache :3000 ──► Upstream LLM / AI Server
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/gatecache.git
+git clone https://github.com/nyxiylll/gatecache.git
 cd gatecache
 
 # Set your upstream URL and run
