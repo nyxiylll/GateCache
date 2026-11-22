@@ -1,3 +1,12 @@
+# Build output
 /target
+
+# Environment secrets (keep .env.example, ignore actual .env)
 .env
+
+# IDE files
 .idea/
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,14 @@
+services:
+  gatecache:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - UPSTREAM_URL=http://your-llm-server:8080
+      - CACHE_SIMILARITY_THRESHOLD=0.85
+      - CACHE_TTL_SECS=3600
+      - RATE_LIMIT_MAX_REQUESTS=60
+      - RATE_LIMIT_WINDOW_MS=60000
+      - MAX_PROMPT_LENGTH=10000
+      - RUST_LOG=info
+    restart: unless-stopped
